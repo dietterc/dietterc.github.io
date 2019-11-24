@@ -1,0 +1,367 @@
+@@ -0,0 +1,309 @@
+body {
+    margin: 60px auto;
+    width: 50%;
+    background: url("https://s3.amazonaws.com/getsocialnewsproduction/news/wp-content/uploads/2018/04/21081133/izakaya-munich.jpg");
+}
+nav ul, footer ul {
+    font-family:'Brush Script MT', 'Calibri', 'erif';
+    padding: 12px 12px;
+    list-style: none;
+    font-weight: bold;
+    background: black;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+a.norm:hover{
+    margin: 0px 0px;
+    background: #777;
+}
+a.norm {
+    text-decoration: none;
+    color: white;
+    background: black;
+    font-size: 25px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+p.bottom {
+    font-size: 24px;
+    text-align: center;
+    transform: translateY(400px);
+}
+
+h1 {
+    font-size: 3em;
+    font-family:'Brush Script MT', 'Calibri', 'Sans-Serif';
+}
+p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #333;
+}
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
+
+.scrollmenu{
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.scrollmenu a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.scrollmenu a:hover{
+    background-color: #777;
+}
+
+* {
+        box-sizing: border-box; 
+      }
+      .img-container {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+      .box {
+        float: left;
+        width: 33.33%;
+        padding: 50px;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+/*Clickable images*/
+
+
+.modal-content {
+  background-color: rgb(255,255,255);
+  margin: auto;
+  border: 1px;
+    height: 80%;
+    position: relative;
+  background-color: white;
+    background-image: url("https://u.tfstatic.com/restaurant_photos/073/210073/169/612/nori-sushi-bar-roll-6989b.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 650px,200px;
+  padding: 20px;
+  border: 5px solid #aaa;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.myBtn{
+    background: #333;
+    outline-color: black;
+}
+button {
+  background-color: #333; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 20px 11px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+button:hover{
+    background-color: #777;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: #a3a2a2;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+var img = document.getElementById("myImg");
+img.onclick = function() {
+  modal.style.display = "block";
+}
+/*Code for the horizontal scrollbars*/
+/*version 3
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  .card {
+    display: inline-block;
+  }
+}*/
+/*Version 2
+:root {
+  --gutter: 20px;
+}
+
+.app {
+  padding: var(--gutter) 0;
+  display: grid;
+  grid-gap: var(--gutter) 0;
+  grid-template-columns: var(--gutter) 1fr var(--gutter);
+  align-content: start;
+}
+
+.app > * {
+  grid-column: 2 / -2;
+}
+
+.app > .full {
+  grid-column: 1 / -1;
+}
+
+.hs {
+  display: grid;
+  grid-gap: calc(var(--gutter) / 2);
+  grid-template-columns: 10px repeat(var(--total), calc(50% - var(--gutter) * 2)) 10px;
+  grid-template-rows: minmax(150px, 1fr);
+  
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  padding-bottom: calc(.75 * var(--gutter));
+  margin-bottom: calc(-.25 * var(--gutter));
+}
+
+.hs:before,
+.hs:after {
+  content: '';
+}
+
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.app {
+  width: 375px;
+  height: 667px;
+  background: #DBD0BC;
+}
+
+.hs > li,
+.item {
+  scroll-snap-align: center;
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+}*/
+/* Version 1
+::-webkit-scrollbar{
+    width:2px;
+    height:2px;
+}
+::-webkit-scrollbar-button{
+    width:2px;
+    height:2px;
+}
+
+div{
+    box-sizing:border-box;
+}
+
+body{
+    background-image: url("https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjluq6i1erlAhWNsBQKHZYeAA8QjRx6BAgBEAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSushi&psig=AOvVaw1QRduh-lHIFAeWnsLgckH2&ust=1573854023551785");
+}
+
+.horizontal-scroll-wrapper{
+    position:static;
+    display:block;
+    top: 60;
+    left: 60;
+    width:80px;
+    max-height: 500px;
+    margin: 60;
+    background: black;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: rotate(-90deg)
+        translateY(-80px);
+    transform-origin: right top;
+}
+
+.horizontal-scroll-wrapper > div{
+    display: block;
+    padding: 5px;
+    background: white;
+    transform: rotate(90deg);
+    transform-origin: right top;
+}
+
+.squares > div{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+.rectangles{
+    top: 100px;
+    padding: 100px 0 0 0;
+}
+
+.rectangles > div{
+    width: 140px;
+    height: 60px;
+    margin: 50px 10px;
+    padding: 5px;
+    background: black;
+    transform: rotate(90deg) translateY(80px);
+    transform-origin: right top;
+}*/
