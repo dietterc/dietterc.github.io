@@ -6,7 +6,7 @@
     <script type="text/javascript" src="../JS/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="../JS/myJs.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>COMP 3020 Group 17</title>
 </head>
@@ -58,8 +58,13 @@
                     <h2 class="concern">Other concerns:</h2>
                     <textarea rows="6" cols="75" name="comment" form="usrform" placeholder="Other concerns" style="resize: none;"></textarea>
                     <br><br>
-                    <input type = "submit" value ="Confirm">
-                    
+                    <button class="myBtn">Confrim</button>
+                    <div class="modal">
+                        <div class="modal-content1">
+                            <span class="close">&times;</span>
+                            <p>The request has been sent.<br><i class="fa fa-check-circle" style="font-size:48px;color:green"></i><br></p>
+                        </div>
+                    </div>
                 </div>
         </div>
     <div id="Reviewbutton" class = "Reviewbutton" 
@@ -320,6 +325,10 @@
                 btns[8].onclick = function() {
                   modal[8].style.display = "block";
                 }
+            }else  if(i == 9){
+                btns[9].onclick = function() {
+                  modal[9].style.display = "block";
+                }
             }
         }
 
@@ -327,19 +336,14 @@
             span[i].onclick = function() {
                 for(var j = 0; j <modal.length; j++){
                     modal[j].style.display = "none";
+                    if(j==9){
+                        Callmodal.style.display = "none";
+                    }
                 }
             }
         }
-
-        window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        }
         </script>
-    <footer>
-      <p>Whatever else needs to go here. </p>
-    </footer>
+    
 
 
 <script>
