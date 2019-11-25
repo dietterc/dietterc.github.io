@@ -1,62 +1,41 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>购物车</title>
-    </head>
-    <style type="text/css">
-        h1{
-            text-align: center;
+jQuery(document).ready(function(){
+    // This button will increment the value
+    $('.qtyplus').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('field');
+        // Get its current value
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        // If is not undefined
+        if (!isNaN(currentVal)) {
+            // Increment
+            $('input[name='+fieldName+']').val(currentVal + 1);
+        } else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(0);
         }
-        table{
-            margin: 0 auto;
+    });
+    // This button will decrement the value till 0
+    $(".qtyminus").click(function(e) {
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('field');
+        // Get its current value
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        // If it isn't undefined or its greater than 0
+        if (!isNaN(currentVal) && currentVal > 0) {
+            // Decrement one
+            $('input[name='+fieldName+']').val(currentVal - 1);
+        } else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(0);
         }
-    body{
-        font-size: larger;color: crimson;
-        background-image: url(img/2.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    table th,table td{
+    });
+});
 
-    }
-    </style>
-    <body >
-        <h1>Your Order</h1>
-        <table border="1" >
-            <tr>
-                <!--文本th-->
-                <th>Name</th>
-                <th>Price</th>
-
-                <th>Modify</th>
-
-            </tr>
-            <tr>
-                <td>Food 1st</td>
-                <td>5.99</td>
-
-                <td align="center">
-                    <input type="button" value="Add" onclick="add_shoppingcar(this)"/>
-                </td>
-            </tr>
-        </table>
-        <h1> Cart</h1>
-        <table border="1">
-            <tbody id="goods">
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="3" align="center" >Total:</td>
-                    <td id="total"></td>
-                    <td>$</td>
-                </tr>
-            </tfoot>
-        </table>
-    </body>
-    <script type="text/javascript">
-
-        function add_shoppingcar(btn){
+function add_shoppingcar(btn){
             var tr=btn.parentNode.parentNode;
             var tds=tr.getElementsByTagName("td");
             var name=tds[0].innerHTML;
@@ -66,7 +45,7 @@
             row.innerHTML="<td>"+name+"</td>"+
         "<td>"+price+"</td>"+
         "<td align='center'>"+
-        "<input type='button' value='-' id='jian'  οnclick='change(this,-1)'  />"+
+        "<input type='button' value='-' id='min'  οnclick='change(this,-1)'  />"+
         "<input id='text' type='text' size='1' value='1' readonly='readonly' />"+
         "<input type='button' value='+' id='add'  οnclick='change(this,1)'  />"+
         "</td>"+
@@ -76,7 +55,7 @@
         "</td>"+
         "</tr>"
         total();
-        }
+}
         //增加减少数量，用n正负1来表示点击了加减按钮
         function change(btn,n){
         //获取数量的三个input对象
@@ -125,5 +104,3 @@
             //tr.remove(tr);
             total();
         }
-    </script>
-</html>

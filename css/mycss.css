@@ -1,0 +1,189 @@
+#myform {
+    text-align: center;
+    padding: 5px;
+    border: 1px dotted #ccc;
+    margin: 2%;
+}
+.qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+}
+input.qtyplus { width:25px; height:25px;}
+input.qtyminus { width:25px; height:25px;}
+
+a:link {
+          color: green;
+          background-color: transparent;
+          text-decoration: none;
+      }
+      a:hover {
+          color: red;
+          background-color: transparent;
+          text-decoration: underline;
+      }
+      a:active {
+          color: blue;
+          background-color: transparent;
+          text-decoration: underline;
+      }
+      
+       .modal {
+                display: none;
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+            
+            /*Modal Content */
+            /* Modal Content */
+
+            .modal-content {
+                background-color: #111111;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;
+            }
+      /* The Close Button */
+            .close {
+                color: #aaaaaa;
+                float: right;
+                font-size: 50px;
+                font-weight: bold;
+            }
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            
+      
+        /*CallModal */
+        /*call button */
+      .Callbutton {
+          background-color: #4CAF50;
+          border: none;
+          color: black;
+          padding: 30px 90px;
+          text-align: center;
+          font-size: 16px;
+          cursor: pointer;
+      }
+      .Callbutton:hover {
+          background-color: green;
+      }
+      
+      .Callmodal {
+                display: none;
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+            
+         
+            .Callmodal-content {
+                background-color: #fefefe;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;
+            }
+            /* The CallClose Button */
+            .Callclose {
+                color: #aaaaaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+            .Callclose:hover,
+            .Callclose:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            
+      
+      
+      /*Review Button*/
+      .Reviewbutton {
+          background-color: red;
+          border: none;
+          color: black;
+          padding: 30px 90px;
+          text-align: center;
+          font-size: 16px;
+          cursor: pointer;
+          
+      }
+      .Reviewbutton:hover {
+          background-color: red;
+      }
+      .ReviewModal {
+                display: none;
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+            
+            /*Modal Content */
+            /* Modal Content */
+
+            .ReviewModal-content {
+                background-color: #111111;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;
+            }
+      /* The Review Close Button */
+            .Reviewclose {
+                color: #aaaaaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+            .Reviewclose:hover,
+            .Reviewclose:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+      
+      
+      
+#myform {
+    text-align: center;
+    padding: 5px;
+    border: 1px dotted #ccc;
+    margin: 2%;
+}
+.qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+}
+input.qtyplus { width:25px; height:25px;}
+input.qtyminus { width:25px; height:25px;}
