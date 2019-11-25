@@ -1,14 +1,37 @@
-@@ -0,0 +1,309 @@
+
 body {
     margin: 60px auto;
-    width: 50%;
+    width: 85%;
+    /*background: url("https://s3.amazonaws.com/getsocialnewsproduction/news/wp-content/uploads/2018/04/21081133/izakaya-munich.jpg");
+    background-repeat: no-repeat;
+    background-position: center;*/
+    background-color: 0xffffff;
+    height: 100%;
 }
+
+
+
+.bg {
+    /* The image used */
+    background-image: url("https://s3.amazonaws.com/getsocialnewsproduction/news/wp-content/uploads/2018/04/21081133/izakaya-munich.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: cover;
+    opacity: 0.3;
+}
+
 nav ul, footer ul {
     font-family:'Brush Script MT', 'Calibri', 'erif';
-    padding: 12px 12px;
+    padding: 15px 60px;
     list-style: none;
     font-weight: bold;
     background: black;
+    
 }
 nav ul li, footer ul li {
     display: inline;
@@ -26,7 +49,7 @@ a.norm {
     
 }
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 
@@ -40,11 +63,13 @@ h1 {
     font-size: 3em;
     font-family:'Brush Script MT', 'Calibri', 'Sans-Serif';
 }
+
 p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
 }
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
@@ -77,118 +102,56 @@ ul.posts li {
     background-color: #777;
 }
 
-{
-        box-sizing: border-box;
-      }
-      .img-container {
-        float: left;
-        width: 33.33%;
-        padding: 5px;
-      }
-      .box {
-        float: left;
-        width: 33.33%;
-        padding: 50px;
-      }
-      .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
+.img-container {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.box {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 /*Clickable images*/
 
+/* Modal Content */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 90%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
 .modal-content {
-  background-color: rgb(255,255,255);
-  margin: auto;
-  border: 1px;
+    background-color: rgb(255,255,255);
+    margin: auto;
+    border: 1px;
     height: 80%;
     position: relative;
-  background-color: white;
-  padding: 20px;
-  border: 5px solid #aaa;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
-}
-
-
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.myBtn{
-    background: #333;
-    outline-color: black;
-}
-button {
-  background-color: #333; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 20px 11px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-button:hover{
-    background-color: #777;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
-
-/* The Close Button */
-.close {
-  color: #a3a2a2;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+    background-color: white;
+    padding: 20px;
+    border: 5px solid #aaa;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
 }
 
 .modal-header {
@@ -205,163 +168,73 @@ button:hover{
   color: white;
 }
 
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.myBtn{
+    background: #333;
+    outline-color: black;
+}
+button {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 15px 20px 11px 20px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #777;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 var img = document.getElementById("myImg");
 img.onclick = function() {
   modal.style.display = "block";
 }
-/*Code for the horizontal scrollbars*/
-/*version 3
-.scrolling-wrapper {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
 
-  .card {
-    display: inline-block;
-  }
-}*/
-/*Version 2
-:root {
-  --gutter: 20px;
-}
-
-.app {
-  padding: var(--gutter) 0;
-  display: grid;
-  grid-gap: var(--gutter) 0;
-  grid-template-columns: var(--gutter) 1fr var(--gutter);
-  align-content: start;
-}
-
-.app > * {
-  grid-column: 2 / -2;
-}
-
-.app > .full {
-  grid-column: 1 / -1;
-}
-
-.hs {
-  display: grid;
-  grid-gap: calc(var(--gutter) / 2);
-  grid-template-columns: 10px repeat(var(--total), calc(50% - var(--gutter) * 2)) 10px;
-  grid-template-rows: minmax(150px, 1fr);
-
-  overflow-x: scroll;
-  scroll-snap-type: x proximity;
-  padding-bottom: calc(.75 * var(--gutter));
-  margin-bottom: calc(-.25 * var(--gutter));
-}
-
-.hs:before,
-.hs:after {
-  content: '';
-}
-
-
-
-html,
-body {
-  height: 100%;
-}
-
-body {
-  display: grid;
-  place-items: center;
-  background: white;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
-}
-
-.app {
-  width: 375px;
-  height: 667px;
-  background: #DBD0BC;
-}
-
-.hs > li,
-.item {
-  scroll-snap-align: center;
-  padding: calc(var(--gutter) / 2 * 1.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  border-radius: 8px;
-}*/
-/* Version 1
-::-webkit-scrollbar{
-    width:2px;
-    height:2px;
-}
-::-webkit-scrollbar-button{
-    width:2px;
-    height:2px;
-}
-
-div{
-    box-sizing:border-box;
-}
-
-body{
-    background-image: url("https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjluq6i1erlAhWNsBQKHZYeAA8QjRx6BAgBEAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSushi&psig=AOvVaw1QRduh-lHIFAeWnsLgckH2&ust=1573854023551785");
-}
-
-.horizontal-scroll-wrapper{
-    position:static;
-    display:block;
-    top: 60;
-    left: 60;
-    width:80px;
-    max-height: 500px;
-    margin: 60;
-    background: black;
-    overflow-y: auto;
-    overflow-x: hidden;
-    transform: rotate(-90deg)
-        translateY(-80px);
-    transform-origin: right top;
-}
-
-.horizontal-scroll-wrapper > div{
-    display: block;
-    padding: 5px;
-    background: white;
-    transform: rotate(90deg);
-    transform-origin: right top;
-}
-
-.squares > div{
-    width: 60px;
-    height: 60px;
-    margin: 10px;
-}
-
-.rectangles{
-    top: 100px;
-    padding: 100px 0 0 0;
-}
-
-.rectangles > div{
-    width: 140px;
-    height: 60px;
-    margin: 50px 10px;
-    padding: 5px;
-    background: black;
-    transform: rotate(90deg) translateY(80px);
-    transform-origin: right top;
-}*/
-
+/*add qty*/
 #myform {
     text-align: center;
     padding: 5px;
@@ -377,169 +250,192 @@ input.qtyplus { width:25px; height:25px;}
 input.qtyminus { width:25px; height:25px;}
 
 a:link {
-          color: green;
-          background-color: transparent;
-          text-decoration: none;
-      }
-      a:hover {
-          color: red;
-          background-color: transparent;
-          text-decoration: underline;
-      }
-      a:active {
-          color: blue;
-          background-color: transparent;
-          text-decoration: underline;
-      }
-      
-       .Chefmodal {
-                display: none;
-                position: fixed; /* Stay in place */
-                z-index: 1; /* Sit on top */
-                padding-top: 100px; /* Location of the box */
-                left: 0;
-                top: 0;
-                width: 100%; /* Full width */
-                height: 100%; /* Full height */
-                overflow: auto; /* Enable scroll if needed */
-                background-color: rgb(0,0,0); /* Fallback color */
-                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-            }
-            
-            /*Modal Content */
-            /* Modal Content */
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
 
-            .Chefmodal-content {
-                background-color: white;
-                margin: auto;
-                padding: 20px;
-                border: 1px solid #888;
-                width: 80%;
-            }
-      /* The Close Button */
-            .Chefclose {
-                color: #aaaaaa;
-                float: right;
-                font-size: 50px;
-                font-weight: bold;
-            }
-            .Chefclose:hover,
-            .Chefclose:focus {
-                color: #000;
-                text-decoration: none;
-                cursor: pointer;
-            }
-            
-      
-        /*CallModal */
-        /*call button */
-      .Callbutton {
-          background-color: #4CAF50;
-          border: none;
-          color: black;
-          padding: 30px 90px;
-          text-align: center;
-          font-size: 16px;
-          cursor: pointer;
-      }
-      .Callbutton:hover {
-          background-color: green;
-      }
-      
-      .Callmodal {
-                display: none;
-                position: fixed; /* Stay in place */
-                z-index: 1; /* Sit on top */
-                padding-top: 100px; /* Location of the box */
-                left: 0;
-                top: 0;
-                width: 100%; /* Full width */
-                height: 100%; /* Full height */
-                overflow: auto; /* Enable scroll if needed */
-                background-color: rgb(0,0,0); /* Fallback color */
-                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-            }
-            
-         
-            .Callmodal-content {
-                background-color: #fefefe;
-                margin: auto;
-                padding: 20px;
-                border: 1px solid #888;
-                width: 80%;
-            }
-            /* The CallClose Button */
-            .Callclose {
-                color: #aaaaaa;
-                float: right;
-                font-size: 28px;
-                font-weight: bold;
-            }
-            .Callclose:hover,
-            .Callclose:focus {
-                color: #000;
-                text-decoration: none;
-                cursor: pointer;
-            }
-            
-      
-      
-      /*Review Button*/
-      .Reviewbutton {
-          background-color: red;
-          border: none;
-          color: black;
-          padding: 30px 90px;
-          text-align: center;
-          font-size: 16px;
-          cursor: pointer;
-          
-      }
-      .Reviewbutton:hover {
-          background-color: darkred;
-      }
-      .ReviewModal {
-                display: none;
-                position: fixed; /* Stay in place */
-                z-index: 1; /* Sit on top */
-                padding-top: 100px; /* Location of the box */
-                left: 0;
-                top: 0;
-                width: 100%; /* Full width */
-                height: 100%; /* Full height */
-                overflow: auto; /* Enable scroll if needed */
-                background-color: rgb(0,0,0); /* Fallback color */
-                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-            }
-            
-            /*Modal Content */
-            /* Modal Content */
+/*Chef modals*/
+.Chefmodal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 90%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
-            .ReviewModal-content {
-                background-color: white;
-                margin: auto;
-                padding: 20px;
-                border: 1px solid #888;
-                width: 80%;
-            }
-      /* The Review Close Button */
-            .Reviewclose {
-                color: #aaaaaa;
-                float: right;
-                font-size: 28px;
-                font-weight: bold;
-            }
-            .Reviewclose:hover,
-            .Reviewclose:focus {
-                color: #000;
-                text-decoration: none;
-                cursor: pointer;
-            }
-      
-      
+.Chefmodal-content {
+    background-color: rgb(255,255,255);
+    margin: auto;
+    border: 1px;
+    height: 80%;
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border: 5px solid #aaa;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Chef close */
+.Chefclose {
+    color: #aaaaaa;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.Chefclose:hover,
+.Chefclose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*General modal */
+/*call button */
+.Callbutton {
+    background-color: #4CAF50;
+    border: none;
+    color: black;
+    padding: 30px 90px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.Callbutton:hover {
+    background-color: green;
+}
+
+.Callmodal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 90%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    text-align: center;
+}
+
+.concern{
+    text-align: left;
+    margin: 10px 20px 20px 93px;
+}
+
+.Callmodal-content {
+    background-color: rgb(255,255,255);
+    margin: auto;
+    border: 1px;
+    height: 80%;
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border: 5px solid #aaa;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* The CallClose Button */
+.Callclose {
+    color: grey;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.Callclose:hover,
+.Callclose:focus {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/*Review Button*/
+.Reviewbutton {
+    background-color: red;
+    border: none;
+    color: black;
+    padding: 30px 90px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.Reviewbutton:hover {
+    background-color: red;
+}
+
+.ReviewModal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 90%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/*Review order Modal*/
+.ReviewModal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+/* The Review Close Button */
+.Reviewclose {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.Reviewclose:hover,
+.Reviewclose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
       
 #myform {
-    text-align: center;
+    text-align: left;
     padding: 5px;
     border: 1px dotted #ccc;
     margin: 2%;
@@ -551,3 +447,74 @@ a:link {
 }
 input.qtyplus { width:25px; height:25px;}
 input.qtyminus { width:25px; height:25px;}
+
+/*callstaff modal*/
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  text-align: left;
+  padding-left: 140px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+    margin-left: 93px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
