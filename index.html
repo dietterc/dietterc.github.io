@@ -9,26 +9,38 @@
 
     <title>COMP 3020 Group 17</title>
 </head>
-    <div id="header" style="background: #413; height: 75px; width: 100%; position: fixed; top:0 ;left:0;" >
+    <div id="header" style="background: black; height: 75px; width: 100%; position: fixed; top:0 ;left:0;" >
     <nav>
       <ul>
 
-        <li><a class = "norm" href="#rolls">Rolls</a></li>
-        <li><a class = "norm" href="#sashimi">Sashimi</a></li>
-        <li><a class = "norm" href="#category3">Category 3</a></li>
+        <li><a class = "norm" href="#rolls" style="font-size: 50px">Rolls</a></li>
+        <li><a class = "norm" href="#sashimi" style="font-size: 50px">Sashimi</a></li>
+        <li><a class = "norm" href="#category3" style="font-size: 50px">Category 3</a></li>
+        <li><a class = "norm" href="#category4" style="font-size: 50px">Category 4</a></li>
 
       </ul>
     </nav>
     </div>
-    <div id="footer" style="background: white; height: 75px; width: 100%; position: fixed; bottom:0 ;left:0; border: 1px solid black;" >
-    <button id="Callbutton" class = "Callbutton">Call Staff ?...</button>
+    <div id="footer" style="background: black; height: 78px; width: 100%; position: fixed; bottom:0 ;left:0; border: 1px solid black;" >
+    <div id="Callbutton" class = "Callbutton"
+         style="
+                width: 125px;
+                position: absolute;
+                font-size: 22px
+                ">Call Staff</div>
         <div id="CallmyModal" class="Callmodal">
                 <div class="Callmodal-content">
                     <Callspan class="Callclose">&times;</Callspan>
                     <img src="sushi.jpg">
                 </div>
         </div>
-    <button id="Reviewbutton" class = "Reviewbutton" style="float: right">Review Order</button>
+    <div id="Reviewbutton" class = "Reviewbutton" 
+            style="
+                   width: 125px;
+                   position: absolute;
+                   font-size: 22px;
+                   right: 0;
+                   ">Review Order</div>
         <div id="ReviewMyModal" class="ReviewModal">
             <div class="ReviewModal-content">
                 <Reviewspan class="Reviewclose">&times;</Reviewspan>
@@ -47,11 +59,15 @@
         </div>
     </div>
 
-
-  <body>
-    <div id = "rolls">
-      <h1>Rolls</h1>
-        <div class="scrollmenu">
+  <body style="background: gray">
+    <div id = "rolls"> <br>
+      <h1 style="
+                 position: relative;
+                 top: 65px;
+                 z-index: -1;
+                 ">Rolls</h1>
+        <br><br><br>
+        <div class="scrollmenu"> 
             <button class="myBtn"><img src="https://i.pinimg.com/originals/ea/10/d8/ea10d8de6a03259356ee4e9c20fc30e7.jpg" alt="Salmon" style="width:100%"></button>
             <div class="modal">
                 <!-- Modal content -->
@@ -174,17 +190,13 @@
 
         </div>
     </div>
-    <div id = "chefs picks">
-        <h1>Chef's Picks</h1>
-    </div>
-    <div id = "sashimi">
+    <div id = "sashimi"><br><br><br><br><br>
         <font size="-3"><h1>Sashimi</h1></font>
         <font size="2"><p>Here's some info</p></font>
     </div>
-    <div id = "category3">
-        <font size="-3"><h1>Chief Recommend</h1></font>
-
-            <h1>Chef Recommend:</h1>
+    <div id = "chefs picks">
+<br><br><br><br><br>
+            <h1>Chef Recommendation:</h1>
             <!-- Trigger/Open The Modal -->
 
             <button id="ChefmyBtn"> <img src="sushi.jpg" width="600" height="300"> </button>
@@ -233,8 +245,8 @@
 
                 </div>
             </div>
+        <div id="category3"><br><br><br><br></div>
         <h1>Category 3</h1>
-
         <div class="scrollmenu">
             <a href="/"><img id="myImg" src="https://i.pinimg.com/originals/ea/10/d8/ea10d8de6a03259356ee4e9c20fc30e7.jpg" alt="Salmon" style="width:100%"></a>
             <a href="/"><img src="https://i.pinimg.com/474x/a9/43/4b/a9434bb66d7aaa354ad53defc9ed74dd--sushi-kit-veggie-sushi.jpg" alt="Veggie" style="width:100%"></a>
@@ -247,6 +259,7 @@
             <a href="/"><img src="https://images.freshop.com/1898840082681430481/170c817c54c8d96a8397e8586d6602b6_medium.png" alt="turkey" style="width:100%"></a>
         </div>
     </div>
+    <div id="category4"><br><br><br><br></div>
     <div id = "Cat 4">
       <h1>Cat 4</h1>
         <div class="scrollmenu">
@@ -260,20 +273,8 @@
             <a href="/"><img src="https://i.pinimg.com/474x/a9/43/4b/a9434bb66d7aaa354ad53defc9ed74dd--sushi-kit-veggie-sushi.jpg" alt="Veggie" style="width:100%"></a>
             <a href="/"><img src="https://images.freshop.com/1898840082681430481/170c817c54c8d96a8397e8586d6602b6_medium.png" alt="turkey" style="width:100%"></a>
         </div>
-    </div>
-    <div id = "Cat 5">
-      <h1>Cat 5</h1>
-        <div class="scrollmenu">
-            <a href="/"><img id="myImg3" src="https://i.pinimg.com/originals/ea/10/d8/ea10d8de6a03259356ee4e9c20fc30e7.jpg" alt="Salmon" style="width:100%"></a>
-            <a href="/"><img src="https://i.pinimg.com/474x/a9/43/4b/a9434bb66d7aaa354ad53defc9ed74dd--sushi-kit-veggie-sushi.jpg" alt="Veggie" style="width:100%"></a>
-            <a href="/"><img src="https://images.freshop.com/1898840082681430481/170c817c54c8d96a8397e8586d6602b6_medium.png" alt="turkey" style="width:100%"></a>
-            <a href="/"><img src="https://i.pinimg.com/originals/ea/10/d8/ea10d8de6a03259356ee4e9c20fc30e7.jpg" alt="Salmon" style="width:100%"></a>
-            <a href="/"><img src="https://i.pinimg.com/474x/a9/43/4b/a9434bb66d7aaa354ad53defc9ed74dd--sushi-kit-veggie-sushi.jpg" alt="Veggie" style="width:100%"></a>
-            <a href="/"><img src="https://images.freshop.com/1898840082681430481/170c817c54c8d96a8397e8586d6602b6_medium.png" alt="turkey" style="width:100%"></a>
-            <a href="/"><img src="https://i.pinimg.com/originals/ea/10/d8/ea10d8de6a03259356ee4e9c20fc30e7.jpg" alt="Salmon" style="width:100%"></a>
-            <a href="/"><img src="https://i.pinimg.com/474x/a9/43/4b/a9434bb66d7aaa354ad53defc9ed74dd--sushi-kit-veggie-sushi.jpg" alt="Veggie" style="width:100%"></a>
-            <a href="/"><img src="https://images.freshop.com/1898840082681430481/170c817c54c8d96a8397e8586d6602b6_medium.png" alt="turkey" style="width:100%"></a>
-        </div>
+        <br><br><br><br><br><br><br><br>
+        
         <script>
         var modal = document.getElementsByClassName("modal");
         var check = 0;

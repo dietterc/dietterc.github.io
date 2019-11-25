@@ -2,7 +2,6 @@
 body {
     margin: 60px auto;
     width: 50%;
-    background: url("https://s3.amazonaws.com/getsocialnewsproduction/news/wp-content/uploads/2018/04/21081133/izakaya-munich.jpg");
 }
 nav ul, footer ul {
     font-family:'Brush Script MT', 'Calibri', 'erif';
@@ -24,6 +23,7 @@ a.norm {
     color: white;
     background: black;
     font-size: 25px;
+    
 }
 html {
   scroll-behavior: smooth;
@@ -496,7 +496,7 @@ a:link {
           
       }
       .Reviewbutton:hover {
-          background-color: red;
+          background-color: darkred;
       }
       .ReviewModal {
                 display: none;
