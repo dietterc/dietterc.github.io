@@ -58,11 +58,13 @@
                     <h2 class="concern">Other concerns:</h2>
                     <textarea rows="6" cols="75" name="comment" form="usrform" placeholder="Other concerns" style="resize: none;"></textarea>
                     <br><br>
-                    <button class="myBtn">Confrim</button>
-                    <div class="modal">
-                        <div class="modal-content1">
-                            <span class="close">&times;</span>
-                            <p>The request has been sent.<br><i class="fa fa-check-circle" style="font-size:48px;color:green"></i><br></p>
+                    <div style = "position: absolute; right:100px; top=100px;">
+                    <button class="myBtn" style="float:right">Confrim</button>
+                        <div class="modal">
+                            <div class="modal-content1">
+                                <span class="close">&times;</span>
+                                <p>The request has been sent.<br><i class="fa fa-check-circle" style="font-size:48px;color:green"></i><br></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -76,21 +78,32 @@
                    font-family: 'Roboto', sans-serif;
                    ">Review Order</div>
         <div id="ReviewMyModal" class="ReviewModal">
-            <div class="ReviewModal-content">
+            <div class="ReviewModal-content" style="width: 50%">
                 <Reviewspan class="Reviewclose">&times;</Reviewspan>
+
                 <h1>Your Order</h1>
+
                 <table border="0">
                 <tbody id="goods"></tbody>
                 <tfoot>
                 <tr>
-                    <td colspan="3" align="center" >Total:</td>
+                    <td colspan="2" align="center" >Total:</td>
                     <td id="total"></td>
-                    <td>$</td>
+                    <td>Items</td>
                 </tr>
                 </tfoot>
-        </table>
+                </table>         
+                <center><button class="myBtn">Confrim</button></center>
+                    <div class="modal">
+                        <div class="modal-content1">
+                            <span class="close">&times;</span>
+                            <center><p>The Order has been sent.<br><i class="fa fa-check-circle" style="font-size:48px;color:green"></i><br></p></center>
+                        </div>
+                    </div>
+        
             </div>
         </div>
+
     </div>
 
   <body style="background: gray">
@@ -115,6 +128,26 @@
                     <p class="middle">Dynamite Roll</p>
                     <p>A dynamite roll is a type of Western-style sushi. <br>It contains a piece of prawn tempura and masago (capelin roe), with <br>vegetables like radish sprouts, avocado and/or cucumber, as well as <br>Japanese mayonnaise.</p>
                 </div>
+                
+                <table align="right" border="0" >
+                <tr>
+                <td>Dynamite Roll </td>
+                <td align="center">
+                    <button style="bottom: 60%; position: absolute;
+                               left: 55%;
+                               border-radius: 50px;
+                               text-align: center;
+                               padding-bottom: 7px;
+                               padding-top: 5px;
+                               font-size: 24px;
+                               font-weight: bold;
+                               
+                               " onclick="add_shoppingcar(this)">Add to order</button>
+                </td>
+                </tr>
+                </table>
+                
+                
             </div>
             <button class="myBtn"><img src="https://i.pinimg.com/474x/a9/43/4b/a9434bb66d7aaa354ad53defc9ed74dd--sushi-kit-veggie-sushi.jpg" alt="Veggie" style="width:100%"></button>
             <div class="modal">
@@ -124,7 +157,25 @@
                 <img src="https://i.pinimg.com/474x/a9/43/4b/a9434bb66d7aaa354ad53defc9ed74dd--sushi-kit-veggie-sushi.jpg" alt="Veggie" style="width:100; height: 50;">
                 <p class="middle">California Roll</p>
                     <p>A California roll or California maki is a makizushi sushi roll that <br>is usually rolled inside-out, and containing cucumber, crab, and <br>avocado.</p>
+                
                 </div>
+                <table align="right" border="0" >
+                <tr>
+                <td>California Roll </td>
+                <td align="center">
+                    <button style="bottom: 60%; position: absolute;
+                               left: 55%;
+                               border-radius: 50px;
+                               text-align: center;
+                               padding-bottom: 7px;
+                               padding-top: 5px;
+                               font-size: 24px;
+                               font-weight: bold;
+                               
+                               " onclick="add_shoppingcar(this)">Add to order</button>
+                </td>
+                </tr>
+                </table>
             </div>
             <button class="myBtn"><img src="https://images.freshop.com/1898840082681430481/170c817c54c8d96a8397e8586d6602b6_medium.png" alt="turkey" style="width:100%"></button>
             <div class="modal">
@@ -132,9 +183,26 @@
                 <div class="modal-content">
                 <span class="close">&times;</span>
                 <img src="https://images.freshop.com/1898840082681430481/170c817c54c8d96a8397e8586d6602b6_medium.png" alt="turkey" style="width:100; height: 50;">
-                <p class="middle">Cruch Roll</p>
+                <p class="middle">Crunch Roll</p>
                     <p>Crunch Roll is 100% tender white meat slowly cooked in <br>our spicy Buffalo sauce and then mixed with a special <br>blend of cheeses. Each one is then individually hand <br>wrapped in a crispy shell and coated with our secret <br>recipe breading to provide its unique CRUNCH!</p>
                 </div>
+                <table align="right" border="0" >
+                <tr>
+                <td>Crunch Roll </td>
+                <td align="center">
+                    <button style="bottom: 60%; position: absolute;
+                               left: 55%;
+                               border-radius: 50px;
+                               text-align: center;
+                               padding-bottom: 7px;
+                               padding-top: 5px;
+                               font-size: 24px;
+                               font-weight: bold;
+                               
+                               " onclick="add_shoppingcar(this)">Add to order</button>
+                </td>
+                </tr>
+                </table>
             </div>
             <button class="myBtn"><img src="https://i.pinimg.com/originals/ea/10/d8/ea10d8de6a03259356ee4e9c20fc30e7.jpg" alt="Salmon" style="width:100%"></button>
             <div class="modal">
@@ -145,6 +213,23 @@
                 <p class="middle">Atlantic Roll</p>
                     <p>The Atlantic roll is a makizushi sushi roll that is <br>usually rolled inside-out, and containing cucumber, <br>crab, and avocado.</p>
                 </div>
+                <table align="right" border="0" >
+                <tr>
+                <td>Atlantic Roll </td>
+                <td align="center">
+                    <button style="bottom: 60%; position: absolute;
+                               left: 55%;
+                               border-radius: 50px;
+                               text-align: center;
+                               padding-bottom: 7px;
+                               padding-top: 5px;
+                               font-size: 24px;
+                               font-weight: bold;
+                               
+                               " onclick="add_shoppingcar(this)">Add to order</button>
+                </td>
+                </tr>
+                </table>
             </div>
             <button class="myBtn"><img src="https://i.pinimg.com/474x/a9/43/4b/a9434bb66d7aaa354ad53defc9ed74dd--sushi-kit-veggie-sushi.jpg" alt="Veggie" style="width:100%"></button>
             <div class="modal">
@@ -155,6 +240,23 @@
                  <p class="middle">Bakudan Roll</p>
                     <p>The Bakudan Roll is a sushi roll that is coated in deep <br>fried breadcrumbs containing cucumber, cheese, and avocado.</p>
                 </div>
+                <table align="right" border="0" >
+                <tr>
+                <td>Bakudan Roll </td>
+                <td align="center">
+                    <button style="bottom: 60%; position: absolute;
+                               left: 55%;
+                               border-radius: 50px;
+                               text-align: center;
+                               padding-bottom: 7px;
+                               padding-top: 5px;
+                               font-size: 24px;
+                               font-weight: bold;
+                               
+                               " onclick="add_shoppingcar(this)">Add to order</button>
+                </td>
+                </tr>
+                </table>
             </div>
             <button class="myBtn"><img src="https://images.freshop.com/1898840082681430481/170c817c54c8d96a8397e8586d6602b6_medium.png" alt="turkey" style="width:100%"></button>
             <div class="modal">
@@ -165,6 +267,23 @@
                 <p class="middle">Tempura Salmon Roll</p>
                     <p>A California roll or California maki is a makizushi sushi roll that <br>is usually rolled inside-out, and containing cucumber, crab, and <br>avocado.</p>
                 </div>
+                <table align="right" border="0" >
+                <tr>
+                <td>Tempura Salmon Roll </td>
+                <td align="center">
+                    <button style="bottom: 60%; position: absolute;
+                               left: 55%;
+                               border-radius: 50px;
+                               text-align: center;
+                               padding-bottom: 7px;
+                               padding-top: 5px;
+                               font-size: 24px;
+                               font-weight: bold;
+                               
+                               " onclick="add_shoppingcar(this)">Add to order</button>
+                </td>
+                </tr>
+                </table>
             </div>
             <button class="myBtn"><img src="https://i.pinimg.com/originals/ea/10/d8/ea10d8de6a03259356ee4e9c20fc30e7.jpg" alt="Salmon" style="width:100%"></button>
             <div class="modal">
@@ -175,6 +294,23 @@
                 <p class="middle">Volcano Roll</p>
                     <p>A California roll or California maki is a makizushi sushi roll that <br>is usually rolled inside-out, and containing cucumber, crab, and <br>avocado.</p>
                 </div>
+                <table align="right" border="0" >
+                <tr>
+                <td>Volcano Roll </td>
+                <td align="center">
+                    <button style="bottom: 60%; position: absolute;
+                               left: 55%;
+                               border-radius: 50px;
+                               text-align: center;
+                               padding-bottom: 7px;
+                               padding-top: 5px;
+                               font-size: 24px;
+                               font-weight: bold;
+                               
+                               " onclick="add_shoppingcar(this)">Add to order</button>
+                </td>
+                </tr>
+                </table>
             </div>
             <button class="myBtn"><img src="https://i.pinimg.com/474x/a9/43/4b/a9434bb66d7aaa354ad53defc9ed74dd--sushi-kit-veggie-sushi.jpg" alt="Veggie" style="width:100%"></button>
             <div class="modal">
@@ -185,6 +321,23 @@
                  <p class="middle">Rainbow Roll</p>
                     <p>A California roll or California maki is a makizushi sushi roll that <br>is usually rolled inside-out, and containing cucumber, crab, and <br>avocado.</p>
                 </div>
+                <table align="right" border="0" >
+                <tr>
+                <td>Rainbow Roll </td>
+                <td align="center">
+                    <button style="bottom: 60%; position: absolute;
+                               left: 55%;
+                               border-radius: 50px;
+                               text-align: center;
+                               padding-bottom: 7px;
+                               padding-top: 5px;
+                               font-size: 24px;
+                               font-weight: bold;
+                               
+                               " onclick="add_shoppingcar(this)">Add to order</button>
+                </td>
+                </tr>
+                </table>
             </div>
             <button class="myBtn"><img src="https://images.freshop.com/1898840082681430481/170c817c54c8d96a8397e8586d6602b6_medium.png" alt="turkey" style="width:100%"></button>
             <div class="modal">
@@ -195,6 +348,23 @@
                 <p class="middle">Oranda Roll</p>
                     <p>A California roll or California maki is a makizushi sushi roll that <br>is usually rolled inside-out, and containing cucumber, crab, and <br>avocado.</p>
                 </div>
+                <table align="right" border="0" >
+                <tr>
+                <td>Oranda Roll </td>
+                <td align="center">
+                    <button style="bottom: 60%; position: absolute;
+                               left: 55%;
+                               border-radius: 50px;
+                               text-align: center;
+                               padding-bottom: 7px;
+                               padding-top: 5px;
+                               font-size: 24px;
+                               font-weight: bold;
+                               
+                               " onclick="add_shoppingcar(this)">Add to order</button>
+                </td>
+                </tr>
+                </table>
             </div>
 
         </div>
@@ -213,37 +383,32 @@
                     <Chefspan class="Chefclose">&times;</Chefspan>
                     <h1 style="text-align: center">Chef's Pick No.1</h1>
                     <video width="300" height="300" controls>
-                        <source src="123.mp4" type=video/mp4>
+                        <source src="sample-video.mp4" type=video/mp4>
                     </video>
-                        <input style="margin: 10px 10px 10px 10px" type="button" value="+" class='qtyminus' field='quantity' onclick="add_shoppingcar(this)"/>
-
-                    <table align="right" border="0" >
-                    <tr>
-                    <!--文本th-->
-                    <th>Name</th>
-
-                    </tr>
-                    <tr>
-                    <td></td>
-                    <td>5.99</td>
-
-                    <td align="center">
-                        
-                    </td>
-                    </tr>
-                    </table>
+                        <input style="margin: 10px 10px 10px 10px" type="button" value="+"  onclick="add_shoppingcar(this)"/>
 
 
-<!--
-                    <td align="center">
-                    <form id='myform' method='POST' action='#'>
-                        <input type='button' value='-' class='qtyminus' field='quantity' onclick="minus_shoppingcar(this)" />
-                        <input type='text' name='quantity' value='0' class='qty' />
-                        <input type='button' value='+' class='qtyplus' field='quantity' onclick="add_shoppingcar(this)" />
-                    </form>
-                    </td>
--->
-                <!-- ADD OR MINUS BUTTON-->
+                <table align="right" border="0" >
+                <tr>
+                <td>Chef's Recommend </td>
+                <td align="center">
+                    <button style="bottom: 40%; position: absolute;
+                               left: 60%;
+                               border-radius: 50px;
+                               text-align: center;
+                               padding-bottom: 7px;
+                               padding-top: 5px;
+                               font-size: 24px;
+                               font-weight: bold;
+                               
+                               " onclick="add_shoppingcar(this)">Add to order</button>
+                </td>
+                </tr>
+                </table>
+                    
+
+
+
 
 
 
@@ -280,14 +445,11 @@
         
         <script>
         var modal = document.getElementsByClassName("modal");
-        var check = 0;
         var btns = document.getElementsByClassName("myBtn");
 
         var span = document.getElementsByClassName("close");
 
         for(var i = 0 ; i<btns.length; i++){
-
-                check = i;
 
             if(i == 0){
                 btns[0].onclick = function(check) {
@@ -329,6 +491,10 @@
                 btns[9].onclick = function() {
                   modal[9].style.display = "block";
                 }
+            }else  if(i == 10){
+                btns[10].onclick = function() {
+                  modal[10].style.display = "block";
+                }
             }
         }
 
@@ -342,11 +508,13 @@
                 }
             }
         }
+
         </script>
     
 
 
 <script>
+    var gAmount;
 // Get the modal
 var Chefmodal = document.getElementById("ChefmyModal");
 
@@ -365,12 +533,6 @@ Chefspan.onclick = function() {
   Chefmodal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == Chefmodal) {
-    Chefmodal.style.display = "none";
-  }
-}
 
 
 
@@ -392,12 +554,6 @@ Callspan.onclick = function() {
   Callmodal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == Callmodal) {
-    Callmodal.style.display = "none";
-  }
-}
 var ReviewModal = document.getElementById("ReviewMyModal");
 
 // Get the button that opens the modal
@@ -418,80 +574,105 @@ Reviewspan.onclick = function() {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == ReviewModal) {
-    ReviewModal.style.display = "none";
-  }
+
+    if (event.target == ReviewModal) {
+        ReviewModal.style.display = "none";
+    } 
+    if(event.target == Callmodal){
+        Callmodal.style.display ="none";
+    }
+    if(event.target == modal[0]){
+        modal[0].style.display = "none";
+        Callmodal.style.display="none";
+    }else if(event.target == modal[1]){
+        modal[1].style.display = "none";
+        ReviewModal.style.display= "none";
+    }else if(event.target == modal[2]){
+        modal[2].style.display = "none";
+    }else if(event.target == modal[3]){
+        modal[3].style.display = "none";
+    }else if(event.target == modal[4]){
+        modal[4].style.display = "none";
+    }else if(event.target == modal[5]){
+        modal[5].style.display = "none";
+    }else if(event.target == modal[6]){
+        modal[6].style.display = "none";
+    }else if(event.target == modal[7]){
+        modal[7].style.display = "none";
+    }else if(event.target == modal[8]){
+        modal[8].style.display = "none";
+    }else if(event.target == modal[9]){
+        modal[9].style.display = "none";
+        Callmodal.style.display ="none";
+    }else if(event.target == Chefmodal){
+        Chefmodal.style.display = "none";
+    }else if(event.target == modal[10]){
+        modal[10].style.display = "none";
+    }
+
 }
+
 
         function add_shoppingcar(btn){
             var tr=btn.parentNode.parentNode;
             var tds=tr.getElementsByTagName("td");
             var name=tds[0].innerHTML;
-            var price=tds[1].innerHTML;
+
             var tbody=document.getElementById("goods");
-            var row=tbody.insertRow();//insertRow表格开头插入新行
-            row.innerHTML="<td>"+name+"</td>"+
-        "<td>"+price+"</td>"+
-        "<td align='center'>"+
-        "<input type='button' value='-' id='min'  οnclick='change(this,-1)'  />"+
-        "<input id='text' type='text' size='1' value='1' readonly='readonly' />"+
-        "<input type='button' value='+' id='add'  οnclick='change(this,1)'  />"+
-        "</td>"+
-        "<td>"+price+"</td>"+
-        "<td align='center'>"+
-            "<input type='button' value='X' οnclick='del(this)'/>"+
-        "</td>"+
-        "</tr>"
-        total();
+            var row=tbody.insertRow();//insertRow
+            row.innerHTML = "<tr>"+
+                "<td>"+name+"</td>"+
+                "<td align='center'>" + 
+                    "<input type='button' value='-' onclick='change(this,-1)' />" +
+                    "<input id='text' type='text' size='1' value='1'/>"+
+                    "<input type='button' value='+' onclick='change(this,1)' />"+
+                "</td>" +
+                "</tr>"
+                total();
         }
-        //增加减少数量，用n正负1来表示点击了加减按钮
+        // add or minus
         function change(btn,n){
-        //获取数量的三个input对象
+        // 3 inputs
         var inputs = btn.parentNode.getElementsByTagName("input");
-        //获取原来的数量
+        // get the value
         var amount = parseInt(inputs[1].value);
-        //当amount=1时不能再点击"-"符号
-        //用n<0来表示点击了减button
+        //when amount is "0" can not hit the "-" 
+        //using n<=0 to indicate user hits the "-"
         if(amount<=1 && n<0){
-            return;
+            del(inputs["1"]) ;
         }
-        //根据加减来改变数量
+        // -1 or +1 
         inputs[1].value = amount + n;
-        //将改变后的数量值赋值给amount
+        // then push the value back to new amount
         amount = inputs[1].value;
-        //获取表格中的行
+        // get the row
         var tr = btn.parentNode.parentNode;
-        //获取所有的列
+        // get the list
         var tds = tr.getElementsByTagName("td");
-        //获取单价
-        var price = parseFloat(tds[1].innerHTML);
-        //总价=单价*数量
-        var m = price * amount;
-        //将总价赋值给相应的位置
-        tds[3].innerHTML = m;
-        //调用total方法，求总计
+        // total = amout
+        var m = amount;
+        // push the total at the td[2] position
+        tds[2].innerHTML = m;
+        // calculate the total by calling the total()
         total();
-    }
-
-
-        function total(){
-            var tbody=document.getElementById("goods");
-            var trs=tbody.getElementsByTagName("tr");
-            var sum=0;
-            for(var i=0;i<trs.length;i++){
-                var tds=trs[i].getElementsByTagName("td");
-                var m=tds[3].innerHTML;
-                sum += parseFloat(m);
-            }
-            var total=document.getElementById("total");
-            total.innerHTML = sum;
         }
-        function del(i){
-            var tr=i.parentNode.parentNode;
+        function del(obj){
+            var tr=obj.parentNode.parentNode;
             tr.parentNode.removeChild(tr);
-            //tr.remove(tr);
-            total();
         }
-
+//        function total(){
+//            var tbody=document.getElementById("goods");
+//            var trs=tbody.getElementsByTagName("tr");
+//            var sum=0;
+//            for(var i=0;i<trs.length;i++){
+//                var tds=trs[i].getElementsByTagName("td");
+//                var m=tds[2].innerHTML;
+//                sum += parseFloat(m);
+//            }
+//            var total=document.getElementById("total");
+//            total.innerHTML = sum;
+//        }
+    
 </script>
+</body>
 </html>
