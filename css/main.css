@@ -9,7 +9,11 @@ body {
     height: 100%;
 }
 
+div.wrap {
 
+    word-wrap: break-word;
+
+}
 
 .bg {
     /* The image used */
@@ -39,7 +43,6 @@ nav ul li, footer ul li {
 }
 a.norm:hover{
     margin: 0px 0px;
-    background: #777;
 }
 a.norm {
     text-decoration: none;
@@ -131,8 +134,9 @@ ul.posts li {
     position: bottom;
     background-color: white;
     padding: 20px;
+    margin-top: 300px;
     border: 5px solid #aaa;
-    width: 50%;
+    width: 20%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -152,6 +156,7 @@ ul.posts li {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    word-wrap: break-all;
 }
 
 .modal-content {
@@ -163,12 +168,13 @@ ul.posts li {
     background-color: white;
     padding: 20px;
     border: 5px solid #aaa;
-    width: 50%;
+    width: 500px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+    word-wrap: break-all;
 }
 
 .modal-header {
@@ -272,12 +278,10 @@ a:link {
     text-decoration: none;
 }
 a:hover {
-    color: red;
     background-color: transparent;
     text-decoration: underline;
 }
 a:active {
-    color: blue;
     background-color: transparent;
     text-decoration: underline;
 }
@@ -292,9 +296,10 @@ a:active {
     top: 0;
     width: 100%; /* Full width */
     height: 90%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+     /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
 }
 
 .Chefmodal-content {
@@ -306,7 +311,7 @@ a:active {
     background-color: white;
     padding: 20px;
     border: 5px solid #aaa;
-    width: 80%;
+    width: 50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -345,7 +350,7 @@ a:active {
 }
 
 .Callbutton:hover {
-    background-color: green;
+    
 }
 
 .Callmodal {
@@ -415,7 +420,7 @@ a:active {
 }
 
 .Reviewbutton:hover {
-    border: 2px solid deepskyblue;
+    
 }
 
 .ReviewModal {
