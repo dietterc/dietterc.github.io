@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Kent | Alex | Johnnus | Fred | Colton">
+    <meta name="description" content="Study Aid Application">
+    <meta name="keywords" content="blog,developer,project">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Postmortem"/>
+<meta name="twitter:description" content="Overall Architecture We used the sample project’s architecture as a guideline, though we started with an empty Android Studio project. We decided to split views and activities within the presentation folder to ease readability.
+What went right Team members who struggled with issues and stories were transparent and asked for help which kept us from being stuck for a long time without making progress. We were able to complete all the user stories without delay for all three iterations."/>
+
+    <meta property="og:title" content="Postmortem" />
+<meta property="og:description" content="Overall Architecture We used the sample project’s architecture as a guideline, though we started with an empty Android Studio project. We decided to split views and activities within the presentation folder to ease readability.
+What went right Team members who struggled with issues and stories were transparent and asked for help which kept us from being stuck for a long time without making progress. We were able to complete all the user stories without delay for all three iterations." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="./postmortem/" />
+<meta property="article:published_time" content="2020-04-01T20:59:18-05:00" />
+<meta property="article:modified_time" content="2020-04-01T20:59:18-05:00" />
+
+
+    
+      <base href="./postmortem/">
+    
+    <title>
+  Postmortem · Memory Cloud
+</title>
+
+    
+      <link rel="canonical" href="./postmortem/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="../../css/coder.min.a4f332213a21ce8eb521670c614470c58923aaaf385e2a73982c31dd7642decb.css" integrity="sha256-pPMyITohzo61IWcMYURwxYkjqq84XipzmCwx3XZC3ss=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="../../css/coder.min.a4f332213a21ce8eb521670c614470c58923aaaf385e2a73982c31dd7642decb.css" />
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="../../index.html">
+      Memory Cloud
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="../../project/index.html">Overview</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="../../features/index.html">Features</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="../index.html">Postmortem</a>
+          </li>
+        
+      
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Postmortem</h1>
+    </header>
+
+    <h2 id="overall-architecture">What was the overall architecture of your system?</h2>
+<p>We used the sample project’s architecture as a guideline, though we started with an empty Android Studio project. We decided to split views and activities within the presentation folder to ease readability.</p>
+<h2 id="what-went-right">What went right in the development process?</h2>
+<p>Team members who struggled with issues and stories were transparent and asked for help which kept us from being stuck for a long time without making progress. We were able to complete all the user stories without delay for all three iterations.</p>
+<h2 id="what-went-wrong-in-the-development-process">What went wrong in the development process?</h2>
+<p>The COVID-19 outbreak made it hard to organize the group at first. During the whole process, we have been trying strategies to improve communication, especially at the beginning of the sprint, but we were not able to apply some of the ideas brought forward during retro1 because of social distancing.</p>
+<h2 id="what-would-you-do-differently-if-you-had-the-chance-to-start-over">What would you do differently, if you had the chance to start over?</h2>
+<p>We should have spent a bit more time testing different application templates. Our app is a bit slow because we start new activities on click instead of fragments. A better understanding of Android development in the beginning would have improved our app’s efficiency.</p>
+<h2 id="how-large-is-the-project-number-of-methods-classes-etc-how-much-of-this-is-roughly-devoted-to-each-major-system-component-and-any-other-quantifiables-eg-if-you-have-a-record-of-hours-spent-on-tasks">How large is the project (number of methods, classes, etc)? How much of this is (roughly) devoted to each major system component? And any other quantifiables (e.g. if you have a record of hours spent on tasks).</h2>
+<p>There are a total of 32 class files in our project. 12 are dedicated to the UI, 12 for the persistence layer, 4 for the business layer, and 4 dedicated to our object classes.</p>
+<h2 id="what-took-the-most-time-the-least-any-surprises">What took the most time? The least? Any surprises?</h2>
+<p>The most time would be the first iteration. This is because everyone was still getting used to Android Studio and version control, as well as understanding the overall architecture of the system. Once we were all on the same page things progressed smoothly.</p>
+<h2 id="are-there-any-particular-design-smells-or-brilliant-design-decisions">Are there any particular design smells, or brilliant design decisions?</h2>
+<p>We intended to make our objects’ presentation different but a lack of foresight in what exactly we wanted to include ended up making them somewhat similar to each other. In hindsight, we could have built an “item” abstract class or interface and extend each object with common methods. Instead, many of our activity classes use a type conditional to call the method for each class that does essentially the same thing for different object types.</p>
+<h2 id="are-there-any-outstanding-bugs">Are there any outstanding bugs?</h2>
+<p>The program does not display the UI as intended for certain devices.</p>
+<h2 id="did-any-features-work-better-than-expected">Did any features work better than expected?</h2>
+<p>Features work as expected.</p>
+<h2 id="are-you-using-any-technologies-other-than-what-was-required-eg-jmock-gui-builders-etc">Are you using any technologies other than what was required (e.g. JMock, GUI builders, etc.)?</h2>
+<p>We are not.</p>
+<h2 id="are-you-using-any-specific-techniques-covered-in-the-course-tdd-pair-programming-scrums-etc">Are you using any specific techniques covered in the course (TDD, pair programming, scrums, etc)?</h2>
+<p>We did not use any specific techniques discussed in class during our development process.</p>
+<h2 id="how-did-the-project-change-from-your-initial-iteration-0-vision-or-stories-or-did-it-work-out-as-predicted">How did the project change from your initial (iteration 0) vision or stories, or did it work out as predicted?</h2>
+<p>The different objects (notes, flashcards, reminders) are not as fleshed out as initially predicted but, overall, the project is very close to the initial vision.</p>
+<h2 id="what-did-you-learn-about-team-or-large-project-development-what-will-you-start-doing-keep-doing-or-stop-doing-next-time">What did you learn about team or large project development? What will you start doing, keep doing, or stop doing next time?</h2>
+<p>That communication and ensuring everyone is on the same page with regards to the project&rsquo;s vision and architecture is important to the overall success of the development process.
+Start: Being more clear with regards to our vision of the finished product.
+Keep: Retrospectives at the end of an iteration or big feature.
+Stop: Waiting until the last minute to start working on features.</p>
+<h2 id="can-you-draw-any-conclusions-from-what-youve-done">Can you draw any conclusions from what you’ve done?</h2>
+<p>I believe that after completing our project we have all gained a large amount of valuable experience in working in groups, developing large projects, and using agile development practices to create software applications.</p>
+
+  </article>
+</section>
+
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+    
+      
+        © 2020
+      
+       Kent | Alex | Johnnus | Fred | Colton 
+    
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+    
+
+  </body>
+
+</html>

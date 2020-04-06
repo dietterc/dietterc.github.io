@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Memory Cloud</title>
+    <link>./</link>
+    <description>Recent content on Memory Cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 01 Apr 2020 20:59:18 -0500</lastBuildDate>
+    
+	<atom:link href="./index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Postmortem</title>
+      <link>./postmortem/</link>
+      <pubDate>Wed, 01 Apr 2020 20:59:18 -0500</pubDate>
+      
+      <guid>./postmortem/</guid>
+      <description>Overall Architecture We used the sample project’s architecture as a guideline, though we started with an empty Android Studio project. We decided to split views and activities within the presentation folder to ease readability.
+What went right Team members who struggled with issues and stories were transparent and asked for help which kept us from being stuck for a long time without making progress. We were able to complete all the user stories without delay for all three iterations.</description>
+    </item>
+    
+    <item>
+      <title>Features Presentation</title>
+      <link>./features/</link>
+      <pubDate>Wed, 01 Apr 2020 20:58:28 -0500</pubDate>
+      
+      <guid>./features/</guid>
+      <description>   </description>
+    </item>
+    
+    <item>
+      <title>Project Overview</title>
+      <link>./project/</link>
+      <pubDate>Wed, 01 Apr 2020 18:25:42 -0500</pubDate>
+      
+      <guid>./project/</guid>
+      <description>Vision Statement The Student Aid Application System is a mobile application aimed to help students with their learning. The system will allow students to create notes, flashcards, and an agenda for themselves to promote the convenience of electronic-based notes and increase the efficiency of a students ability to study and manage their time.
+The system will be implemented as a mobile application to target smartphones as it allows the notes to be conveniently accessible within the users’ reach.</description>
+    </item>
+    
+  </channel>
+</rss>
